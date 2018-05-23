@@ -25,7 +25,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
-    "yf-fpm-client-nodejs": "^1.0.11",
-    "yf-fpm-server": "^2.2.25"
+    "yf-fpm-client-nodejs": "^1.0.15",
+    "yf-fpm-server": "^2.3.0"
   }
 }
