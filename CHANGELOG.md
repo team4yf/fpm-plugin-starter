@@ -1,3 +1,4 @@
 ## 0.0.1
 
-Init
+Change `script` in `package.json`
+`prepublishOnly` replace `prepublish` 
