@@ -2818,16 +2818,16 @@ yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
 
-yf-fpm-client-js@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/yf-fpm-client-js/-/yf-fpm-client-js-1.0.1.tgz#4dd53064d24d3dd89db17abb6da9e0a20b1ebe7f"
+yf-fpm-client-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/yf-fpm-client-js/-/yf-fpm-client-js-1.0.2.tgz#199866c134ad5251c1cd571a1c9a9c8acb1c7476"
   dependencies:
     axios "^0.18.0"
     lodash "^4.17.4"
 
-yf-fpm-server@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.6.tgz#c7c9b839ab746e4583762ba0a6276df18d55fd1e"
+yf-fpm-server@^2.4.11:
+  version "2.4.11"
+  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.11.tgz#bb66381198f8dcf41d7b8bd4e606bf417cddfe2d"
   dependencies:
     koa "^2.5.1"
     koa-bodyparser "^4.2.1"

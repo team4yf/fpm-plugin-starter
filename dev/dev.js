@@ -2,8 +2,8 @@
 import { Fpm } from 'yf-fpm-server'
 import plugin from '../src'
 let app = new Fpm()
-plugin.bind(app)
-
+const ref = plugin.bind(app)
+console.info(ref)
 let biz = app.createBiz('0.0.1');
 
 biz.addSubModules('test',{
