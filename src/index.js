@@ -1,6 +1,6 @@
-import _ from 'lodash'
+const _ = require('lodash');
 
-export default {
+module.exports = {
   bind: (fpm) => {
     // Run When Server Init
     fpm.registerAction('INIT', () => {
@@ -11,6 +11,6 @@ export default {
     fpm.registerAction('BEFORE_SERVER_START', () => {
       console.log('Run BEFORE_SERVER_START Actions')
     })
-
+    return {};
   }
 }
