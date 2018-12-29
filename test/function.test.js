@@ -1,8 +1,6 @@
-const should = require("chai").should();
-const fpmc = require("yf-fpm-client-js").default;
-const { Func } = fpmc;
-fpmc.init({appkey: '123123', masterKey: '123123', domain: 'http://localhost:9999'});
-
+const { init, Func } = require("fpmc-jssdk");
+const assert = require('assert');
+init({ appkey:'123123', masterKey:'123123', endpoint: 'http://localhost:9999/api' });
 
 describe('Function', function(){
   beforeEach(done => {
@@ -18,7 +16,7 @@ describe('Function', function(){
     var func = new Func('test.foo');
     func.invoke({})
       .then(function(data){
-        console.log(data)
+        assert.strictEqual(data == undefined, false, 'should not be undefined');
         done();
       }).catch(function(err){
         done(err);

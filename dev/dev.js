@@ -8,7 +8,7 @@ let biz = app.createBiz('0.0.1');
 
 biz.addSubModules('test',{
 	foo: args => {
-		return Promise.reject({errno: -3001})
+		return Promise.reject({errno: -3001, message: 'not allow to access'})
 	}
 })
 app.addBizModules(biz);
