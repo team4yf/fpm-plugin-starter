@@ -1,5 +1,6 @@
 const _ = require('lodash');
-
+const pkg = require('../package.json');
+const debug = require('debug')(pkg.name);
 module.exports = {
   bind: (fpm) => {
 
@@ -7,7 +8,7 @@ module.exports = {
     // Run When Server Init
     fpm.registerAction('INIT', () => {
       const c = fpm.getConfig()
-      console.log('Run Init Actions', c)
+      debug('%o', c);
     })
 
     fpm.registerAction('BEFORE_SERVER_START', () => {
