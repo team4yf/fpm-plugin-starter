@@ -12,14 +12,12 @@ describe('Function', function(){
     done()
   })
 
-  it('Function A', function(done){
-    var func = new Func('test.foo');
-    func.invoke({})
-      .then(function(data){
-        assert.strictEqual(data == undefined, false, 'should not be undefined');
-        done();
-      }).catch(function(err){
-        done(err);
-      })
+  it('Function A', async () => {
+    try {
+      const data = await new Func('test.foo').invoke()
+      assert.strictEqual(data == undefined, false, 'should not be undefined');
+    } catch (error) {
+      throw error;
+    }
   })
 })
